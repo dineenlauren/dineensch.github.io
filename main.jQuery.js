@@ -22,6 +22,11 @@ $.each($elementAnimate, function() {
     });
 }
 
-
 $window.on('scroll resize', isPartiallyVisible);
 $window.trigger('scroll');
+
+$(function(){
+    $(".flip").flip({
+        trigger: 'hover'
+    });
+});
