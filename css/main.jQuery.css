@@ -138,3 +138,14 @@ header.masthead .bg-circle {
     height: 300px!important;
 }
 
+.back-to-top {
+    color: white;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
