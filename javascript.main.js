@@ -14,17 +14,17 @@ let isScrolling = false;
  
     document.addEventListener("DOMContentLoaded", scrolling, false);
  
-    let firstPhoto = document.querySelector("#firstPhoto");
-    let secondPhoto = document.querySelector("#secondPhoto");
+    var firstPhoto = document.querySelector("#firstPhoto");
+    var secondPhoto = document.querySelector("#secondPhoto");
  
     
     function scrolling() {
- 
       if (isPartiallyVisible(firstPhoto)) {
         firstPhoto.classList.add("active");
       } else {
         firstPhoto.classList.remove("active");
       }
+
  
       if (isFullyVisible(secondPhoto)) {
         secondPhoto.classList.add("active");
@@ -33,8 +33,8 @@ let isScrolling = false;
       }
     }
  
-    function isPartiallyVisible(e) {
-      let elementBoundary = e.getBoundingClientRect();
+    function isPartiallyVisible(elementPartial) {
+      let elementBoundary = elementPartial.getBoundingClientRect();
  
       let top = elementBoundary.top;
       let bottom = elementBoundary.bottom;
@@ -43,8 +43,8 @@ let isScrolling = false;
       return ((top + height >= 0) && (height + window.innerHeight >= bottom));
     }
  
-    function isFullyVisible(e) {
-      let elementBoundary = e.getBoundingClientRect();
+    function isFullyVisible(elementFull) {
+      let elementBoundary = elementFull.getBoundingClientRect();
  
       let top = elementBoundary.top;
       let bottom = elementBoundary.bottom;

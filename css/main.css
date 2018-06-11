@@ -45,9 +45,8 @@ header.masthead .bg-circle {
 /* ANIMATION: JAVASCRIPT TRANSITIONS */
 
 #firstPhoto {
-    font-weight: bold;
-    transform: translate3d(50px, -100px, -200px);
-    transition: all 1.5s ease-in-out;
+    transform: translate3d(-30px, 0, 0);
+    transition: all 1s ease-in-out;
     opacity: 0;
   }
 
@@ -57,8 +56,8 @@ header.masthead .bg-circle {
   }
 
 #secondPhoto {
-    transition: all 1.5s ease-in-out;
-    transform: translate3d(-50px, 100px, 100px);
+    transition: all 1s ease-in-out;
+    transform: translate3d(-100px, 100px, 100px);
     opacity: 0;
   }
 
@@ -71,22 +70,32 @@ header.masthead .bg-circle {
 
 /* ANIMATION JQUERY TRANSITIONS */
 
-.elementAnimate {
+.elementPartial {
     position: relative;
     margin: 0% 1.33% 2.66% 1.33%;
     float: left;
   }
 
-.elementAnimate.active {
+.elementPartial.active {
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 
+.elementFull {
+    position: relative;
+    margin: 0% 1.33% 2.66% 1.33%;
+    float: left;
+}
+
+.elementFull.active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 
 .bounceUp {
     opacity: 0;
-    -webkit-transition: all 700ms ease-out;
-    transition: all 700ms ease-out;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
     -webkit-transform: translate3d(0px, 200px, 0px);
     -ms-transform: translate(0px, 200px);
     transform: translate3d(0px, 200, 0px);
@@ -103,6 +112,29 @@ header.masthead .bg-circle {
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
   }
+
+.slideLeft {
+    opacity: 0;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+    -ms-transform: translate(-100px, 0px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+.slideLeft.active {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
 
 /*  ************* ROW 1: CSS STYLING ************** */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
