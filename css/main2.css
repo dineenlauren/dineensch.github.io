@@ -1,0 +1,69 @@
+.ss-container:before{
+    position: absolute;
+    width: 100px;
+    background: rgba(17,17,22,0.8);
+	margin-left: 15px;
+    content: '';
+    height: 100%;
+}
+
+.page-heading {
+    font-family: 'Rock Salt', cursive;
+}
+
+.page-phrase {
+    font-family: 'Raleway', sans-serif;
+}
+
+header.masthead {
+    background: linear-gradient(0deg,#ff6a00 0,#ee8f8f 100%);
+}
+
+header.masthead .bg-circle {
+    background: linear-gradient(0deg,#ee0979 0,#f3d650 100%);
+}
+
+.btn-primary {
+    background-color: rgb(53, 53, 53);
+    border-color: rgb(53, 53, 53);
+}
+
+#verticleBar {
+    position: fixed;
+    height: 100%;
+    width: 130px;
+    background-color: black;
+    margin-left: 20px;
+    overflow-x: hidden;
+}
+
+.main {
+    margin-left: 130px;
+}
+
+
+
+/* ANIMATION TRANSITIONS */
+
+#firstPhoto {
+    font-weight: bold;
+    transform: translate3d(50px, -100px, -200px);
+    transition: all 1.5s ease-in-out;
+    opacity: 0;
+  }
+
+#firstPhoto.active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+#secondPhoto {
+    transition: all 1.5s ease-in-out;
+    transform: translate3d(-50px, 100px, 100px);
+    opacity: 0;
+  }
+
+#secondPhoto.active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
