@@ -7,8 +7,12 @@
     height: 100%;
 }
 
-.page-heading {
-    font-family: 'Rock Salt', cursive;
+.fn_heading {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.ln_heading {
+    font-family: 'Homemade Apple', cursive;
 }
 
 .page-phrase {
@@ -43,6 +47,26 @@ header.masthead .bg-circle {
 
 
 /* ANIMATION: JAVASCRIPT TRANSITIONS */
+
+.icon-ui {
+    top: -1.3rem;
+    left: 40%;
+}
+
+.icon-ux {
+    top: 5rem;
+    left: 2%;
+}
+
+.icon-js {
+    bottom: -1.3rem;
+    right: 40%;
+}
+
+.icon-vue {
+    bottom: 5rem;
+    right: 2%;
+}
 
 #firstPhoto {
     transform: translate3d(-30px, 0, 0);
