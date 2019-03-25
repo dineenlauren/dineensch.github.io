@@ -1,268 +1,267 @@
+/* .page-container {
+  position: fixed;
+} */
+
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-.sidebar{
-    z-index: 1;
-    width: 100px;
-    position: fixed;
-    padding-top: 80px;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    background: rgba(17,17,22,0.8);
-    overflow-x: hidden;
+.sidebar {
+  z-index: 1;
+  width: 100px;
+  position: fixed;
+  padding-top: 80px;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  background: rgba(17, 17, 22, 0.8);
+  overflow-x: hidden;
 }
 
-.side-icons{
+.side-icons {
   top: 100rem;
 }
 
 .fn_heading {
-    font-family: 'Share Tech Mono', monospace;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .ln_heading {
-    font-family: 'Homemade Apple', cursive;
+  font-family: 'Homemade Apple', cursive;
 }
 
 .page-phrase {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 header.masthead {
-    background: linear-gradient(0deg,#ff6a00 0,#ee8f8f 100%);
+  background: linear-gradient(0deg, #ff6a00 0, #ee8f8f 100%);
 }
 
 header.masthead .bg-circle {
-    background: linear-gradient(0deg,#ee0979 0,#f3d650 100%);
+  background: linear-gradient(0deg, #ee0979 0, #f3d650 100%);
 }
 
 .btn-primary {
-    background-color: rgb(53, 53, 53);
-    border-color: rgb(53, 53, 53);
+  background-color: rgb(53, 53, 53);
+  border-color: rgb(53, 53, 53);
 }
 
 .main {
-    margin-left: 120px;
+  margin-left: 120px;
 }
-
 
 /* CSS ANIMATION: ICON TRANSITIONS */
 
 .icon-ui {
-    top: -1.3rem;
-    left: 40%;
-    background: black;
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    color: white;
-    font-size: 2rem;
+  top: -1.3rem;
+  left: 40%;
+  background: black;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 2rem;
 }
 
 .icon-ux {
-    top: 5rem;
-    left: 2%;
-    background: black;
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    color: white;
-    font-size: 2rem;
+  top: 5rem;
+  left: 2%;
+  background: black;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 2rem;
 }
 
 .icon-js {
-    bottom: -1.3rem;
-    right: 40%;
-    background: black;
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    color: white;
-    font-size: 2rem;
+  bottom: -1.3rem;
+  right: 40%;
+  background: black;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 2rem;
 }
 
 .icon-vue {
-    bottom: 5rem;
-    right: 2%;
-    background: black;
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    color: white;
-    font-size: 1.5rem;
+  bottom: 5rem;
+  right: 2%;
+  background: black;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .xt-vue {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* JS ANIMATIONS: WHEN and WHERE */
 #firstPhoto {
-    transform: translate3d(-200px, 0, 0);
-    transition: all 1.3s ease-in-out;
-    opacity: 0;
-  }
+  transform: translate3d(-200px, 0, 0);
+  transition: all 1.3s ease-in-out;
+  opacity: 0;
+}
 
 #firstPhoto.active {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
 
 #secondPhoto {
-    transform: translate3d(200px, 0, 0);    
-    transition: all 1s ease-in-out;
-    opacity: 0;
-  }
+  transform: translate3d(200px, 0, 0);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
 
 #secondPhoto.active {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-
-
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
 
 /* ANIMATION JQUERY TRANSITIONS */
 
 .elementPartial {
-    position: relative;
-    margin: 0% 1.33% 2.66% 1.33%;
-    float: left;
-  }
+  position: relative;
+  margin: 0% 1.33% 2.66% 1.33%;
+  float: left;
+}
 
 .elementPartial.active {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
 
 .elementFull {
-    position: relative;
-    margin: 0% 1.33% 2.66% 1.33%;
-    float: left;
+  position: relative;
+  margin: 0% 1.33% 2.66% 1.33%;
+  float: left;
 }
 
 .elementFull.active {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
 
 .bounceUp {
-    opacity: 0;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
-    -webkit-transform: translate3d(0px, 200px, 0px);
-    -ms-transform: translate(0px, 200px);
-    transform: translate3d(0px, 200, 0px);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
+  opacity: 0;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
 .bounceUp.active {
-    opacity: 1;
-    -moz-transform: translate3d(0px, 0px, 0px);
-    -webkit-transform: translate3d(0px, 0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    transform: translate3d(0px, 0px, 0px);
-  }
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
 
 .slideLeft {
-    opacity: 0;
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
-    -webkit-transform: translate3d(-100px, 0px, 0px);
-    -ms-transform: translate(-100px, 0px, 0px);
-    transform: translate3d(-100px, 0px, 0px);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-.slideLeft.active {
-    opacity: 1;
-    -moz-transform: translate3d(0px, 0px, 0px);
-    -webkit-transform: translate3d(0px, 0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    transform: translate3d(0px, 0px, 0px);
+  opacity: 0;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -ms-transform: translate(-100px, 0px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-
+.slideLeft.active {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
 
 /*  ************* ROW 1: CSS STYLING ************** */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-    transform: rotateY(180deg);
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
 }
 
-.flip-container, .front, .back2{
-	width: 100%;
-    height: 300px;
-    border-radius:.25rem;
-    vertical-align: middle;
+.flip-container,
+.front,
+.back2 {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.25rem;
+  vertical-align: middle;
 }
 
 .flipper {
-	transition: 0.7s;
-	transform-style: preserve-3d;
-	position: relative;
+  transition: 0.7s;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
-.front, .back2 {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
+.front,
+.back2 {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .front {
-	z-index: 2;
-	transform: rotateY(0deg);
+  z-index: 2;
+  transform: rotateY(0deg);
 }
 
 .back2 {
-    transform: rotateY(180deg);
-    background-color: black;
-    color: white;
+  transform: rotateY(180deg);
+  background-color: black;
+  color: white;
 }
-
 
 /* ********** ROW 2: jQuery STYLING************* */
 .flip {
-	max-width: 100%;
-    height: 300px;
-    margin: 0 auto;
-    border-radius:.25rem;
+  max-width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 0.25rem;
 }
 .flip img {
-	max-width: 100%;
-    height: 300px;
+  max-width: 100%;
+  height: 300px;
 }
 .flip .back {
-    background: black;
-    color: #fff;
-    text-align: center;
+  background: black;
+  color: #fff;
+  text-align: center;
 }
-
-
 
 /* **********  General Card Styling ************* */
 .card-img {
-    height: 100%!important;
-    width: 100%;
+  height: 100% !important;
+  width: 100%;
 }
 
 .back-to-top {
-    color: white;
-    cursor: pointer;
+  color: white;
+  cursor: pointer;
 }
 
 .back-to-top:hover {
-    color: white;
-    cursor: pointer;
-    font-weight: 600;
-    text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
 }
